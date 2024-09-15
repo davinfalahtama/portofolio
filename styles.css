@@ -1,79 +1,41 @@
-/* General Styling */
 body {
-    font-family: 'Poppins', sans-serif;
-    line-height: 1.6;
-    background-color: #fff;
+    font-family: 'Arial', sans-serif;
 }
 
-.navbar-brand {
-    font-weight: bold;
+.hero {
+    background-color: #f8f9fa;
+    padding: 100px 0;
+    background-image: url('hero-image.jpg'); /* Replace with a relevant background image */
+    background-size: cover;
+    color: #333;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
+}
+
+.hero p {
     font-size: 1.5rem;
+    margin-bottom: 30px;
 }
 
-/* Hero Section */
-#hero {
-    background-color: #f0f0f0;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.about, .education, .experience, .projects, .contact {
+    padding: 60px 0;
 }
 
-#hero h1 {
-    font-size: 3.5rem;
-    font-weight: bold;
+ul {
+    list-style-type: none;
+    padding-left: 0;
 }
 
-#hero p {
-    font-size: 1.25rem;
-    color: #666;
-}
-
-/* About Section */
-#about h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-#about p {
+ul li {
     font-size: 1.2rem;
-    max-width: 600px;
-    margin: 0 auto;
-    color: #666;
+    margin-bottom: 15px;
 }
 
-/* Projects Section */
-#projects h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-.project-card {
-    border: none;
-    transition: transform 0.3s;
-}
-
-.project-card:hover {
-    transform: scale(1.05);
-}
-
-.project-card h5 {
-    font-size: 1.25rem;
-    font-weight: bold;
-}
-
-.project-card p {
-    font-size: 1rem;
-    color: #666;
-}
-
-/* Contact Section */
-#contact h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-footer p {
-    margin: 0;
-    color: #fff;
+footer {
+    background-color: #f8f9fa;
+    color: #333;
+    padding: 20px 0;
 }
