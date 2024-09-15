@@ -2,6 +2,7 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    background-color: #fff;
 }
 
 .navbar-brand {
@@ -11,7 +12,11 @@ body {
 
 /* Hero Section */
 #hero {
-    background: linear-gradient(to right, #007bff, #6610f2);
+    background-color: #f0f0f0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #hero h1 {
@@ -20,7 +25,8 @@ body {
 }
 
 #hero p {
-    font-size: 1.2rem;
+    font-size: 1.25rem;
+    color: #666;
 }
 
 /* About Section */
@@ -30,15 +36,25 @@ body {
 }
 
 #about p {
-    font-size: 1.1rem;
-    margin: 0 auto;
+    font-size: 1.2rem;
     max-width: 600px;
+    margin: 0 auto;
+    color: #666;
 }
 
 /* Projects Section */
 #projects h2 {
     font-size: 2.5rem;
     font-weight: bold;
+}
+
+.project-card {
+    border: none;
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: scale(1.05);
 }
 
 .project-card h5 {
@@ -57,7 +73,7 @@ body {
     font-weight: bold;
 }
 
-/* Footer */
 footer p {
     margin: 0;
+    color: #fff;
 }
