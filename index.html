@@ -1,75 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Firmansyah Davin Falahtama</title>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Firmansyah Davin Falahtama | Portfolio</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
 
-    <!-- Hero Section -->
-    <header class="hero">
-        <div class="hero-content">
-            <h1>Firmansyah Davin Falahtama</h1>
-            <p>AI & Machine Learning Enthusiast</p>
-            <a href="#projects" class="btn">View My Work</a>
-        </div>
-    </header>
+  <section id="home">
+    <div class="intro">
+      <h1>Firmansyah Davin Falahtama</h1>
+      <p>Machine Learning & AI Enthusiast | Data Scientist</p>
+      <a href="#contact" class="btn">Get in Touch</a>
+    </div>
+  </section>
 
-    <!-- About Section -->
-    <section class="about" id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>I am a recent graduate from ITPLN with a focus on Machine Learning and Artificial Intelligence. I have worked on various projects involving data analytics, AI, and machine learning solutions. Passionate about solving real-world problems through technology.</p>
-            <img src="images/profile.jpeg" alt="Profile Picture" class="profile-img">
-        </div>
-    </section>
+  <section id="about">
+    <h2>About Me</h2>
+    <p>Recent graduate from Institut Teknologi Perusahaan Listrik Negara with a focus on Machine Learning and Artificial Intelligence. Passionate about solving problems and building impactful AI solutions.</p>
+  </section>
 
-    <!-- Projects Section -->
-    <section class="projects" id="projects">
-        <div class="container">
-            <h2>Projects</h2>
+  <section id="projects">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <div class="project">
+        <h3>GiziWise</h3>
+        <p>AI-driven app that provides nutritional info from food images.</p>
+        <a href="https://github.com/gizi-wise" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>PMB Chatbot</h3>
+        <p>LLM-based chatbot for ITPLN’s New Student Admissions.</p>
+        <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">View Project</a>
+      </div>
+      <div class="project">
+        <h3>TensorFlow Object Detection</h3>
+        <p>ML algorithm using CNN to detect Indonesian food objects.</p>
+        <a href="https://github.com/davinfalahtama/gizi-wise-ML" target="_blank">View Project</a>
+      </div>
+    </div>
+  </section>
 
-            <div class="project-card">
-                <img src="images/project1.png" alt="Project 1">
-                <h3>GiziWise App</h3>
-                <p>A nutrition analysis app using AI for food recognition. This app helps users discover the nutritional content of food items through image recognition.</p>
-                <a href="https://github.com/gizi-wise" target="_blank" class="btn">View on GitHub</a>
-            </div>
+  <section id="experience">
+    <h2>Experience</h2>
+    <ul>
+      <li>
+        <strong>Data Analytics Intern</strong> at PLN Icon Plus (2023-2024)
+        <p>Performed customer profiling using Python, EDA, and Clustering.</p>
+      </li>
+      <li>
+        <strong>AI Engineer</strong> at Sekretariat Ditjen Dikti (2024)
+        <p>Developed Borobudur AI Chatbot using advanced LLMs.</p>
+      </li>
+    </ul>
+  </section>
 
-            <div class="project-card">
-                <img src="images/project2.png" alt="Project 2">
-                <h3>ITPLN Admissions Chatbot</h3>
-                <p>A chatbot developed for ITPLN's new student admissions, using Retrieval-Augmented Generation and LLMs to deliver accurate information.</p>
-                <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank" class="btn">View on GitHub</a>
-            </div>
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Feel free to reach out to me via email or connect on LinkedIn!</p>
+    <div class="contact-info">
+      <a href="mailto:firmansyah2031211@itpln.ac.id">Email Me</a>
+      <a href="https://www.linkedin.com/in/firmansyahdavin" target="_blank">LinkedIn</a>
+      <a href="https://github.com/davinfalahtama" target="_blank">GitHub</a>
+    </div>
+  </section>
 
-            <div class="project-card">
-                <img src="images/project3.png" alt="Project 3">
-                <h3>TensorFlow Object Detection</h3>
-                <p>Created a TensorFlow model for detecting Indonesian food items using CNNs and achieved 91.5% accuracy.</p>
-                <a href="https://github.com/davinfalahtama/gizi-wise-ML" target="_blank" class="btn">View on GitHub</a>
-            </div>
-        </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section class="contact" id="contact">
-        <div class="container">
-            <h2>Contact</h2>
-            <p>Feel free to reach out if you're interested in working together or if you have any questions.</p>
-            <ul>
-                <li>Email: <a href="mailto:firmansyah2031211@itpln.ac.id">firmansyah2031211@itpln.ac.id</a></li>
-                <li>LinkedIn: <a href="https://www.linkedin.com/in/firmansyahdavin">linkedin.com/in/firmansyahdavin</a></li>
-                <li>GitHub: <a href="https://github.com/davinfalahtama">github.com/davinfalahtama</a></li>
-            </ul>
-        </div>
-    </section>
-
-    <footer>
-        <p>&copy; 2024 Firmansyah Davin Falahtama</p>
-    </footer>
-
+  <footer>
+    <p>&copy; 2024 Firmansyah Davin Falahtama. All rights reserved.</p>
+  </footer>
 </body>
 </html>
