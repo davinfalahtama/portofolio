@@ -10,46 +10,41 @@
 </head>
 <body>
 
-    <!-- Navigation Bar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
-            <a class="navbar-brand" href="#">Firmansyah Davin Falahtama</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#about">About</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#education">Education</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#experience">Experience</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#projects">Projects</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact</a>
-                    </li>
-                </ul>
-            </div>
+    <!-- Sidebar Navigation -->
+    <nav id="sideNav" class="navbar navbar-expand-lg navbar-dark fixed-top">
+        <div class="container-fluid flex-column">
+            <a class="navbar-brand mb-4" href="#">Firmansyah Davin</a>
+            <ul class="navbar-nav flex-column">
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#education">Education</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#experience">Experience</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
+            </ul>
         </div>
     </nav>
 
     <!-- Hero Section -->
-    <section class="hero text-center">
+    <section id="hero" class="hero text-center d-flex align-items-center justify-content-center">
         <div class="container">
-            <h1>Firmansyah Davin Falahtama</h1>
-            <p>Machine Learning & AI Engineer | Data Scientist | Python Enthusiast</p>
-            <a href="#projects" class="btn btn-primary">View My Work</a>
+            <h1 class="display-4">Firmansyah Davin Falahtama</h1>
+            <p class="lead">Machine Learning & AI Engineer</p>
+            <a href="#projects" class="btn btn-outline-light btn-lg">Explore My Work</a>
         </div>
     </section>
 
     <!-- About Section -->
-    <section id="about" class="about py-5">
+    <section id="about" class="section py-5">
         <div class="container">
             <h2>About Me</h2>
             <p>I am a recent graduate from Institut Teknologi Perusahaan Listrik Negara with a focus on Machine Learning and Artificial Intelligence. I have experience working on AI projects and solutions using Python, TensorFlow, and other tools. My passion lies in problem-solving and creating impactful tech solutions.</p>
@@ -57,45 +52,81 @@
     </section>
 
     <!-- Education Section -->
-    <section id="education" class="education py-5 bg-light">
+    <section id="education" class="section py-5 bg-light">
         <div class="container">
             <h2>Education</h2>
-            <ul>
-                <li><strong>Institut Teknologi Perusahaan Listrik Negara</strong> - Bachelor of Informatics Engineering (2020-2024)</li>
-                <li><strong>Bangkit Academy 2023</strong> - Machine Learning Path</li>
-            </ul>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Institut Teknologi Perusahaan Listrik Negara</h3>
+                    <p>Bachelor of Informatics Engineering (2020-2024)</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>Bangkit Academy 2023</h3>
+                    <p>Machine Learning Path</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Experience Section -->
-    <section id="experience" class="experience py-5">
+    <section id="experience" class="section py-5">
         <div class="container">
             <h2>Experience</h2>
-            <ul>
-                <li><strong>Data Analytics Intern at PLN Icon Plus</strong> (Oct 2023 - Jan 2024)</li>
-                <li><strong>AI Engineer at Sekretariat Direktorat Jenderal Pendidikan Tinggi</strong> (Feb 2024 - Jun 2024)</li>
-            </ul>
+            <div class="timeline">
+                <div class="timeline-item">
+                    <h3>Data Analytics Intern at PLN Icon Plus</h3>
+                    <p>Oct 2023 - Jan 2024</p>
+                </div>
+                <div class="timeline-item">
+                    <h3>AI Engineer at Sekretariat Direktorat Jenderal Pendidikan Tinggi</h3>
+                    <p>Feb 2024 - Jun 2024</p>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Projects Section -->
-    <section id="projects" class="projects py-5 bg-light">
+    <section id="projects" class="section py-5 bg-light">
         <div class="container">
             <h2>Projects</h2>
-            <ul>
-                <li><a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">New Student Admission Chatbot - ITPLN</a></li>
-                <li><a href="https://github.com/davinfalahtama/gizi-wise-ML" target="_blank">GiziWise App - Food Nutrition Analyzer</a></li>
-                <li><a href="https://github.com/davinfalahtama/gizi-wise" target="_blank">TensorFlow Object Detection</a></li>
-            </ul>
+            <div class="row">
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">New Student Admission Chatbot</h5>
+                            <p class="card-text">Developed a chatbot using LLM for ITPLN's admissions process.</p>
+                            <a href="https://github.com/davinfalahtama/1Skripsi" class="btn btn-outline-dark" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">GiziWise App</h5>
+                            <p class="card-text">An app that analyzes the nutrition content of food images.</p>
+                            <a href="https://github.com/davinfalahtama/gizi-wise" class="btn btn-outline-dark" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4 col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">TensorFlow Object Detection</h5>
+                            <p class="card-text">Built a machine learning algorithm to detect food objects.</p>
+                            <a href="https://github.com/davinfalahtama/gizi-wise-ML" class="btn btn-outline-dark" target="_blank">View Project</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <!-- Contact Section -->
-    <section id="contact" class="contact py-5">
-        <div class="container">
+    <section id="contact" class="section py-5">
+        <div class="container text-center">
             <h2>Contact</h2>
             <p>If you'd like to get in touch, feel free to reach me at:</p>
-            <ul>
+            <ul class="list-unstyled">
                 <li>Email: <a href="mailto:firmansyah2031211@itpln.ac.id">firmansyah2031211@itpln.ac.id</a></li>
                 <li>LinkedIn: <a href="https://www.linkedin.com/in/firmansyahdavin" target="_blank">linkedin.com/in/firmansyahdavin</a></li>
                 <li>GitHub: <a href="https://github.com/davinfalahtama" target="_blank">github.com/davinfalahtama</a></li>
