@@ -5,77 +5,80 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Firmansyah Davin Falahtama Portfolio">
     <title>Firmansyah Davin Falahtama</title>
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <!-- Full-Screen Navigation -->
-    <nav class="navbar fixed-top navbar-light">
+    <!-- Navigation -->
+    <nav class="navbar">
         <div class="container">
-            <a class="navbar-brand" href="#">Firmansyah Davin Falahtama</a>
-            <div class="d-flex">
-                <a class="nav-link" href="#about">About</a>
-                <a class="nav-link" href="#projects">Projects</a>
-                <a class="nav-link" href="#contact">Contact</a>
+            <a class="logo" href="#">Firmansyah Davin Falahtama</a>
+            <div class="nav-links">
+                <a href="#about">About</a>
+                <a href="#work">Work</a>
+                <a href="#contact">Contact</a>
             </div>
         </div>
     </nav>
 
-    <!-- Fullscreen Hero Section -->
-    <section id="hero" class="fullscreen d-flex align-items-center justify-content-center">
-        <div class="text-center">
+    <!-- Hero Section -->
+    <section id="hero" class="fullscreen">
+        <div class="container text-center">
             <h1>Firmansyah Davin Falahtama</h1>
             <p>AI Enthusiast | Data Scientist | Software Developer</p>
         </div>
     </section>
 
-    <!-- About Section (Full-screen) -->
-    <section id="about" class="fullscreen d-flex align-items-center justify-content-center bg-light">
-        <div class="text-center">
+    <!-- About Section -->
+    <section id="about" class="fullscreen">
+        <div class="container text-center">
             <h2>About Me</h2>
-            <p>
-                I’m a recent graduate from ITPLN specializing in Machine Learning and AI, with a passion for building innovative solutions.
-                I believe in simplicity and effectiveness, both in my work and in life.
-            </p>
+            <p>I am passionate about building innovative solutions using AI and data science to solve real-world problems.</p>
         </div>
     </section>
 
-    <!-- Projects Section (Full-screen) -->
-    <section id="projects" class="fullscreen d-flex align-items-center justify-content-center">
+    <!-- Work Section -->
+    <section id="work" class="fullscreen">
         <div class="container text-center">
-            <h2>Selected Projects</h2>
-            <div class="row mt-5">
-                <div class="col-md-6 mb-4">
-                    <h5>GiziWise - Nutrition Detection App</h5>
-                    <p>Helps users identify the nutritional composition of food using image analysis.</p>
-                    <a href="https://github.com/gizi-wise" target="_blank" class="btn btn-dark">View Project</a>
-                </div>
-                <div class="col-md-6 mb-4">
-                    <h5>PMB Chatbot - ITPLN</h5>
-                    <p>A chatbot for ITPLN’s new student admissions process using LLMs.</p>
-                    <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank" class="btn btn-dark">View Project</a>
-                </div>
+            <h2>Selected Work</h2>
+            <div class="work-item">
+                <h3>GiziWise - Nutrition Detection App</h3>
+                <p>Analyzing food images to provide nutritional insights.</p>
+                <a href="https://github.com/gizi-wise" target="_blank">View Project</a>
+            </div>
+            <div class="work-item">
+                <h3>PMB Chatbot - ITPLN</h3>
+                <p>AI-based chatbot for assisting ITPLN’s new student admissions.</p>
+                <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">View Project</a>
             </div>
         </div>
     </section>
 
-    <!-- Contact Section (Full-screen) -->
-    <section id="contact" class="fullscreen d-flex align-items-center justify-content-center bg-light">
-        <div class="text-center">
+    <!-- Contact Section -->
+    <section id="contact" class="fullscreen">
+        <div class="container text-center">
             <h2>Contact Me</h2>
-            <p>Feel free to reach out for collaboration or inquiries!</p>
-            <a href="mailto:firmansyah2031211@itpln.ac.id" class="btn btn-dark">Email Me</a>
-            <a href="https://www.linkedin.com/in/firmansyahdavin/" target="_blank" class="btn btn-outline-dark">LinkedIn</a>
+            <p>Feel free to reach out if you'd like to collaborate or have any inquiries.</p>
+            <a href="mailto:firmansyah2031211@itpln.ac.id" class="btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/firmansyahdavin/" target="_blank" class="btn-outline">LinkedIn</a>
         </div>
     </section>
 
     <!-- Footer -->
-    <footer class="py-3 text-center">
+    <footer class="text-center">
         <p>&copy; 2024 Firmansyah Davin Falahtama</p>
     </footer>
 
-    <!-- Bootstrap JS -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Smooth Scroll JS -->
+    <script>
+        document.querySelectorAll('.nav-links a').forEach(anchor => {
+            anchor.addEventListener('click', function(e) {
+                e.preventDefault();
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+    </script>
 </body>
 </html>
