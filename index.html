@@ -5,55 +5,135 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Firmansyah Davin Falahtama Portfolio">
     <title>Firmansyah Davin Falahtama</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <header>
-        <h1>Firmansyah Davin Falahtama</h1>
-        <p>Informatics Engineering | AI & ML Enthusiast | Data Analyst</p>
-        <nav>
-            <a href="https://www.linkedin.com/in/firmansyahdavin/" target="_blank">LinkedIn</a>
-            <a href="https://github.com/davinfalahtama" target="_blank">GitHub</a>
-            <a href="mailto:firmansyah2031211@itpln.ac.id">Email Me</a>
-        </nav>
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+            <a class="navbar-brand" href="#">Firmansyah Davin Falahtama</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#education">Education</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#experience">Experience</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#projects">Projects</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#skills">Skills</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://www.linkedin.com/in/firmansyahdavin/" target="_blank">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Header Section -->
+    <header class="text-center py-5 bg-dark text-white">
+        <div class="container">
+            <h1>Firmansyah Davin Falahtama</h1>
+            <p class="lead">Informatics Engineering | AI & ML Enthusiast | Data Analyst</p>
+            <a href="mailto:firmansyah2031211@itpln.ac.id" class="btn btn-primary">Contact Me</a>
+            <a href="https://github.com/davinfalahtama" class="btn btn-outline-light">GitHub</a>
+        </div>
     </header>
 
-    <section id="about">
-        <h2>About Me</h2>
-        <p>I am a recent graduate from Institut Teknologi Perusahaan Listrik Negara (ITPLN) with expertise in Machine Learning and Artificial Intelligence. I am passionate about building impactful solutions in the tech industry, focusing on data-driven projects and AI applications.</p>
+    <!-- About Section -->
+    <section id="about" class="py-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p class="lead">I am a recent graduate from Institut Teknologi Perusahaan Listrik Negara (ITPLN) with expertise in Machine Learning and Artificial Intelligence. I am passionate about building impactful solutions in the tech industry, focusing on data-driven projects and AI applications.</p>
+        </div>
     </section>
 
-    <section id="education">
-        <h2>Education</h2>
-        <ul>
-            <li><strong>Institut Teknologi Perusahaan Listrik Negara (ITPLN)</strong> - Informatics Engineering, 2020-2024 (GPA: 3.90/4.00)</li>
-            <li><strong>Bangkit Academy 2023</strong> - Machine Learning Track</li>
-        </ul>
+    <!-- Education Section -->
+    <section id="education" class="py-5 bg-light">
+        <div class="container">
+            <h2>Education</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <strong>Institut Teknologi Perusahaan Listrik Negara (ITPLN)</strong> - Informatics Engineering (2020-2024)
+                    <span class="badge bg-primary float-end">GPA: 3.90/4.00</span>
+                </li>
+                <li class="list-group-item">
+                    <strong>Bangkit Academy 2023</strong> - Machine Learning Track
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li><strong>Data Analytics Intern</strong> - PLN Icon Plus (Oct 2023 - Jan 2024)</li>
-            <li><strong>AI Engineer</strong> - Ministry of Education (Feb 2024 - Jun 2024)</li>
-        </ul>
+    <!-- Experience Section -->
+    <section id="experience" class="py-5">
+        <div class="container">
+            <h2>Experience</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h4>Data Analytics Intern</h4>
+                    <p><em>PLN Icon Plus (Oct 2023 - Jan 2024)</em></p>
+                </div>
+                <div class="col-md-6">
+                    <h4>AI Engineer</h4>
+                    <p><em>Ministry of Education (Feb 2024 - Jun 2024)</em></p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li><a href="https://github.com/gizi-wise" target="_blank">GiziWise - Nutrition Detection App</a></li>
-            <li><a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">PMB Chatbot - ITPLN</a></li>
-        </ul>
+    <!-- Projects Section -->
+    <section id="projects" class="py-5 bg-light">
+        <div class="container">
+            <h2>Projects</h2>
+            <ul class="list-group">
+                <li class="list-group-item">
+                    <a href="https://github.com/gizi-wise" target="_blank">GiziWise - Nutrition Detection App</a>
+                </li>
+                <li class="list-group-item">
+                    <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">PMB Chatbot - ITPLN</a>
+                </li>
+            </ul>
+        </div>
     </section>
 
-    <section id="skills">
-        <h2>Skills</h2>
-        <p>Python, TensorFlow, Deep Learning, Data Analysis, Machine Learning, AI, Project Management</p>
+    <!-- Skills Section -->
+    <section id="skills" class="py-5">
+        <div class="container">
+            <h2>Skills</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5>Programming</h5>
+                    <p>Python, TensorFlow, Deep Learning</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Data Analysis</h5>
+                    <p>Data Analytics, Machine Learning, AI</p>
+                </div>
+                <div class="col-md-4">
+                    <h5>Soft Skills</h5>
+                    <p>Leadership, Project Management, Communication</p>
+                </div>
+            </div>
+        </div>
     </section>
 
-    <footer>
-        <p>&copy; 2024 Firmansyah Davin Falahtama</p>
+    <!-- Footer -->
+    <footer class="bg-dark text-white text-center py-3">
+        <p>&copy; 2024 Firmansyah Davin Falahtama | <a href="mailto:firmansyah2031211@itpln.ac.id" class="text-white">Email Me</a></p>
     </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
