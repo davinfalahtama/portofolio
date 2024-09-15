@@ -1,0 +1,78 @@
+/* General Styling */
+body {
+    font-family: 'Poppins', sans-serif;
+    line-height: 1.6;
+    background-color: #f8f9fa;
+}
+
+.navbar-brand {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+/* Hero Section */
+#hero {
+    background: linear-gradient(to right, #007bff, #6610f2);
+}
+
+#hero h1 {
+    font-size: 3.5rem;
+    font-weight: bold;
+}
+
+#hero p {
+    font-size: 1.25rem;
+}
+
+/* About Section */
+#about h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#about p {
+    font-size: 1.2rem;
+    margin: 0 auto;
+    max-width: 600px;
+}
+
+/* Skills Section */
+#skills h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#skills .bi {
+    color: #007bff;
+}
+
+#skills h4 {
+    margin-top: 1rem;
+    font-size: 1.5rem;
+}
+
+/* Projects Section */
+#projects h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+#projects .card {
+    border: none;
+}
+
+#projects .card h5 {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+/* Contact Section */
+#contact h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+/* Footer */
+footer p {
+    margin: 0;
+}
