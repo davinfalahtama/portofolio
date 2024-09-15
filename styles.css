@@ -2,7 +2,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     line-height: 1.6;
-    background-color: #f8f9fa;
 }
 
 .navbar-brand {
@@ -21,7 +20,7 @@ body {
 }
 
 #hero p {
-    font-size: 1.25rem;
+    font-size: 1.2rem;
 }
 
 /* About Section */
@@ -31,24 +30,9 @@ body {
 }
 
 #about p {
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     margin: 0 auto;
     max-width: 600px;
-}
-
-/* Skills Section */
-#skills h2 {
-    font-size: 2.5rem;
-    font-weight: bold;
-}
-
-#skills .bi {
-    color: #007bff;
-}
-
-#skills h4 {
-    margin-top: 1rem;
-    font-size: 1.5rem;
 }
 
 /* Projects Section */
@@ -57,13 +41,14 @@ body {
     font-weight: bold;
 }
 
-#projects .card {
-    border: none;
-}
-
-#projects .card h5 {
+.project-card h5 {
     font-size: 1.25rem;
     font-weight: bold;
+}
+
+.project-card p {
+    font-size: 1rem;
+    color: #666;
 }
 
 /* Contact Section */
