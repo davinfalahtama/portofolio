@@ -1,118 +1,39 @@
-/* General Styling */
 body {
-    font-family: 'Poppins', sans-serif;
+    font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f9f9f9;
-    color: #333;
+    background-color: #f4f4f4;
 }
 
-.navbar {
-    display: flex;
-    justify-content: space-between;
-    padding: 20px;
-    background-color: transparent;
-    position: fixed;
-    width: 100%;
-    z-index: 10;
-    transition: background-color 0.3s ease;
-}
-
-.navbar.sticky {
-    background-color: #fff;
-}
-
-.navbar ul {
-    list-style: none;
-    display: flex;
-    margin: 0;
-    padding: 0;
-}
-
-.navbar ul li {
-    margin-left: 20px;
-}
-
-.navbar ul li a {
-    color: #333;
-    text-decoration: none;
-    font-weight: 600;
-}
-
-#hero {
-    height: 100vh;
-    background-image: url('your-hero-image.jpg');
-    background-size: cover;
-    background-position: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: white;
-}
-
-.hero-content h1 {
-    font-size: 3rem;
-    margin-bottom: 20px;
-}
-
-.cta-button {
-    padding: 12px 30px;
-    background-color: #fff;
-    color: #333;
-    border: none;
-    border-radius: 5px;
-    text-transform: uppercase;
-    text-decoration: none;
-    font-weight: bold;
-    transition: background-color 0.3s ease;
-}
-
-.cta-button:hover {
-    background-color: #764ba2;
-    color: white;
-}
-
-.section {
-    padding: 80px 20px;
-    max-width: 1200px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.projects-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 20px;
-}
-
-.project-card {
-    background-color: #fff;
-    padding: 20px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-    border-radius: 8px;
-    transition: transform 0.3s ease;
-}
-
-.project-card:hover {
-    transform: translateY(-10px);
-}
-
-footer {
+header {
     background-color: #333;
     color: white;
     padding: 20px;
     text-align: center;
 }
 
-/* Animations */
-.section {
-    opacity: 0;
-    transform: translateY(50px);
-    transition: opacity 0.8s ease, transform 0.8s ease;
+header nav a {
+    color: white;
+    margin: 0 15px;
+    text-decoration: none;
 }
 
-.section.active {
-    opacity: 1;
-    transform: translateY(0);
+header nav a:hover {
+    text-decoration: underline;
+}
+
+section {
+    padding: 20px;
+    margin: 10px;
+    background-color: white;
+}
+
+footer {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
 }
