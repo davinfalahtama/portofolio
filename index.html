@@ -7,7 +7,7 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <header>
+  <div class="sidebar">
     <nav>
       <ul>
         <li><a href="#home">Home</a></li>
@@ -17,68 +17,59 @@
         <li><a href="#contact">Contact</a></li>
       </ul>
     </nav>
-  </header>
+  </div>
 
-  <section id="home">
-    <div class="intro">
+  <section id="home" class="section full-screen">
+    <div class="content">
       <h1>Firmansyah Davin Falahtama</h1>
-      <p>Machine Learning & AI Enthusiast | Data Scientist</p>
-      <a href="#contact" class="btn">Get in Touch</a>
+      <p>AI Engineer & Machine Learning Specialist</p>
     </div>
   </section>
 
-  <section id="about">
-    <h2>About Me</h2>
-    <p>Recent graduate from Institut Teknologi Perusahaan Listrik Negara with a focus on Machine Learning and Artificial Intelligence. Passionate about solving problems and building impactful AI solutions.</p>
+  <section id="about" class="section">
+    <div class="content">
+      <h2>About Me</h2>
+      <p>I am a recent graduate from ITPLN with a focus on AI and Machine Learning, eager to build impactful solutions in the tech industry.</p>
+    </div>
   </section>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <div class="project-grid">
-      <div class="project">
-        <h3>GiziWise</h3>
-        <p>AI-driven app that provides nutritional info from food images.</p>
-        <a href="https://github.com/gizi-wise" target="_blank">View Project</a>
-      </div>
-      <div class="project">
-        <h3>PMB Chatbot</h3>
-        <p>LLM-based chatbot for ITPLN’s New Student Admissions.</p>
-        <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">View Project</a>
-      </div>
-      <div class="project">
-        <h3>TensorFlow Object Detection</h3>
-        <p>ML algorithm using CNN to detect Indonesian food objects.</p>
-        <a href="https://github.com/davinfalahtama/gizi-wise-ML" target="_blank">View Project</a>
+  <section id="projects" class="section">
+    <div class="content">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project">
+          <h3>GiziWise</h3>
+          <p>An AI app providing nutritional info through image recognition.</p>
+        </div>
+        <div class="project">
+          <h3>PMB Chatbot</h3>
+          <p>A chatbot for ITPLN's admissions using LLMs.</p>
+        </div>
+        <div class="project">
+          <h3>TensorFlow Object Detection</h3>
+          <p>A food object detection system using CNN architecture.</p>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="experience">
-    <h2>Experience</h2>
-    <ul>
-      <li>
-        <strong>Data Analytics Intern</strong> at PLN Icon Plus (2023-2024)
-        <p>Performed customer profiling using Python, EDA, and Clustering.</p>
-      </li>
-      <li>
-        <strong>AI Engineer</strong> at Sekretariat Ditjen Dikti (2024)
-        <p>Developed Borobudur AI Chatbot using advanced LLMs.</p>
-      </li>
-    </ul>
+  <section id="experience" class="section">
+    <div class="content">
+      <h2>Experience</h2>
+      <ul>
+        <li><strong>Data Analytics Intern</strong> at PLN Icon Plus (2023-2024)</li>
+        <li><strong>AI Engineer</strong> at Sekretariat Ditjen Dikti (2024)</li>
+      </ul>
+    </div>
   </section>
 
-  <section id="contact">
-    <h2>Contact</h2>
-    <p>Feel free to reach out to me via email or connect on LinkedIn!</p>
-    <div class="contact-info">
-      <a href="mailto:firmansyah2031211@itpln.ac.id">Email Me</a>
+  <section id="contact" class="section">
+    <div class="content">
+      <h2>Contact</h2>
+      <p>Reach out via LinkedIn or email.</p>
+      <a href="mailto:firmansyah2031211@itpln.ac.id">Email</a> |
       <a href="https://www.linkedin.com/in/firmansyahdavin" target="_blank">LinkedIn</a>
-      <a href="https://github.com/davinfalahtama" target="_blank">GitHub</a>
     </div>
   </section>
-
-  <footer>
-    <p>&copy; 2024 Firmansyah Davin Falahtama. All rights reserved.</p>
-  </footer>
 </body>
 </html>
