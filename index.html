@@ -5,66 +5,64 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Firmansyah Davin Falahtama's portfolio">
     <title>Firmansyah Davin Falahtama - Portfolio</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <header>
-        <h1>Firmansyah Davin Falahtama</h1>
-        <nav>
-            <ul>
-                <li><a href="#about">About</a></li>
-                <li><a href="#experience">Experience</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="navbar">
+            <div class="logo">Firmansyah Davin</div>
+            <nav>
+                <ul>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#experience">Experience</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </header>
 
-    <section id="about">
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Firmansyah Davin Falahtama</h1>
+            <p>Machine Learning & AI Enthusiast | Data Science Professional</p>
+            <a href="#projects" class="cta-button">View My Work</a>
+        </div>
+    </section>
+
+    <section id="about" class="section">
         <h2>About Me</h2>
-        <p>I am a recent graduate from Institut Teknologi Perusahaan Listrik Negara with a focus on Machine Learning and Artificial Intelligence. I am proficient in Python and have experience working with various ML algorithms and AI technologies.</p>
-        <p>Education: Institut Teknologi Perusahaan Listrik Negara - GPA: 3.90/4.00</p>
+        <p>I am a recent graduate from Institut Teknologi Perusahaan Listrik Negara with a focus on Machine Learning and Artificial Intelligence.</p>
     </section>
 
-    <section id="experience">
+    <section id="experience" class="section">
         <h2>Experience</h2>
-        <div>
+        <div class="experience-item">
             <h3>Data Analytics Intern</h3>
-            <p>PLN Icon Plus, South Jakarta, Indonesia (Oct 2023 - Jan 2024)</p>
-            <p>Performed customer profiling using Python to provide insights through Exploratory Data Analysis (EDA) and Clustering.</p>
-        </div>
-        <div>
-            <h3>Artificial Intelligence Engineer</h3>
-            <p>Kampus Merdeka, South Tangerang, Indonesia (Feb 2024 - Jun 2024)</p>
-            <p>Developed the Borobudur AI Chatbot using advanced LLM models and integrated sentiment analysis.</p>
+            <p>PLN Icon Plus, South Jakarta (Oct 2023 - Jan 2024)</p>
         </div>
     </section>
 
-    <section id="projects">
+    <section id="projects" class="section">
         <h2>Projects</h2>
-        <div>
-            <h3>GiziWise</h3>
-            <p>An application that provides detailed nutritional information by analyzing images. <a href="https://github.com/gizi-wise">View on GitHub</a></p>
-        </div>
-        <div>
-            <h3>Borobudur AI Chatbot</h3>
-            <p>Interactive chatbot for students, built with LLMs, fine-tuned for accuracy. <a href="https://github.com/davinfalahtama/1Skripsi">View on GitHub</a></p>
-        </div>
-        <div>
-            <h3>TensorFlow Object Detection</h3>
-            <p>Developed a model to detect Indonesian food using CNN with a 91.5% accuracy rate. <a href="https://github.com/davinfalahtama/gizi-wise-ML">View on GitHub</a></p>
+        <div class="projects-grid">
+            <div class="project-card">
+                <h3>GiziWise</h3>
+                <p>An AI-based app that analyzes food nutrition via images.</p>
+                <a href="https://github.com/gizi-wise" class="project-link">View on GitHub</a>
+            </div>
         </div>
     </section>
 
-    <section id="contact">
+    <section id="contact" class="section">
         <h2>Contact Me</h2>
-        <p>Email: <a href="mailto:firmansyah2031211@itpln.ac.id">firmansyah2031211@itpln.ac.id</a></p>
+        <p>Email: firmansyah2031211@itpln.ac.id</p>
         <p>LinkedIn: <a href="https://www.linkedin.com/in/firmansyahdavin/">Firmansyah Davin</a></p>
-        <p>GitHub: <a href="https://github.com/davinfalahtama">davinfalahtama</a></p>
     </section>
 
     <footer>
-        <p>&copy; 2024 Firmansyah Davin Falahtama. All rights reserved.</p>
+        <p>&copy; 2024 Firmansyah Davin Falahtama</p>
     </footer>
 </body>
 </html>

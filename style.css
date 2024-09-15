@@ -1,57 +1,86 @@
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     padding: 0;
-    background-color: #f4f4f9;
+    background-color: #f9f9f9;
     color: #333;
 }
 
-header {
-    background-color: #333;
-    color: #fff;
+.navbar {
+    display: flex;
+    justify-content: space-between;
     padding: 20px;
-    text-align: center;
+    background-color: #333;
+    color: white;
+    position: fixed;
+    width: 100%;
+    top: 0;
 }
 
-nav ul {
+.navbar ul {
     list-style: none;
+    display: flex;
+    margin: 0;
     padding: 0;
 }
 
-nav ul li {
-    display: inline;
-    margin: 0 15px;
+.navbar ul li {
+    margin-left: 20px;
 }
 
-nav ul li a {
-    color: #fff;
+.navbar ul li a {
+    color: white;
     text-decoration: none;
 }
 
-section {
-    padding: 50px;
-    margin: 20px;
+.hero-content {
+    text-align: center;
+    padding: 100px 20px;
+    background: linear-gradient(to right, #667eea, #764ba2);
+    color: white;
 }
 
-section#contact p {
+.cta-button {
+    background-color: #fff;
+    color: #333;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.cta-button:hover {
+    background-color: #764ba2;
+    color: white;
+}
+
+.section {
+    padding: 80px 20px;
     text-align: center;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.project-link {
+    color: #667eea;
+    text-decoration: none;
 }
 
 footer {
-    text-align: center;
-    padding: 20px;
     background-color: #333;
-    color: #fff;
-}
-
-@media (max-width: 600px) {
-    nav ul li {
-        display: block;
-        margin: 10px 0;
-    }
-
-    section {
-        padding: 20px;
-        margin: 10px;
-    }
+    color: white;
+    padding: 20px;
+    text-align: center;
 }
