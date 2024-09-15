@@ -1,33 +1,52 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&display=swap');
+
 /* General Styling */
 body {
-    font-family: 'Helvetica Neue', sans-serif;
-    color: #333;
+    font-family: 'Montserrat', sans-serif;
     margin: 0;
     padding: 0;
+    color: #333;
+    scroll-behavior: smooth;
 }
 
 h1, h2 {
-    font-weight: 300;
+    font-weight: 700;
     margin-bottom: 1rem;
 }
 
-/* Navbar */
+p {
+    font-weight: 400;
+    max-width: 600px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.fullscreen {
+    height: 100vh;
+    padding: 0;
+}
+
 .navbar {
+    background: rgba(255, 255, 255, 0.8);
     box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
 }
 
 .nav-link {
     margin-right: 20px;
     font-size: 1.1rem;
+    color: #333;
+}
+
+.nav-link:hover {
+    color: #000;
 }
 
 /* Hero Section */
 #hero {
-    height: 100vh;
-    background: #f8f9fa;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    background: url('C:\Repo Github\portofolio\images\bg.jpg.jpg') center/cover no-repeat;
+    color: #fff;
+    text-shadow: 0px 4px 10px rgba(0, 0, 0, 0.5);
 }
 
 #hero h1 {
@@ -37,40 +56,45 @@ h1, h2 {
 
 #hero p {
     font-size: 1.5rem;
-    color: #555;
 }
 
 /* About Section */
 #about {
-    padding: 5rem 0;
+    background-color: #f8f9fa;
+    color: #333;
 }
 
-#about p {
-    max-width: 600px;
-    margin: 0 auto;
-    color: #555;
+#about h2 {
+    font-size: 3rem;
 }
 
 /* Projects Section */
-.project-card {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.05);
-    transition: transform 0.3s;
+#projects h2 {
+    font-size: 3rem;
+    margin-bottom: 2rem;
 }
 
-.project-card:hover {
-    transform: scale(1.05);
+#projects .btn {
+    margin-top: 1rem;
+}
+
+#projects h5 {
+    font-size: 1.5rem;
 }
 
 /* Contact Section */
-#contact p {
-    max-width: 500px;
-    margin: 0 auto 2rem;
+#contact {
+    background-color: #f8f9fa;
+}
+
+#contact h2 {
+    font-size: 3rem;
 }
 
 /* Footer */
 footer {
-    background: #f8f9fa;
-    padding: 1rem 0;
+    background: #fff;
     color: #666;
+    padding: 20px;
     font-size: 0.9rem;
 }
