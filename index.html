@@ -3,128 +3,178 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="Portfolio of Firmansyah Davin Falahtama, Machine Learning and AI Engineer.">
   <title>Firmansyah Davin Falahtama | Portfolio</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/styles.css">
-  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-  <header>
-    <div class="container">
-      <nav>
-        <ul>
-          <li><a href="#about">About</a></li>
-          <li><a href="#experience">Experience</a></li>
-          <li><a href="#projects">Projects</a></li>
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-      </nav>
-    </div>
-  </header>
-
-  <section id="home">
-    <div class="intro">
+  <!-- Hero Section -->
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div class="container text-center">
       <h1>Firmansyah Davin Falahtama</h1>
-      <p>Machine Learning & AI Engineer passionate about problem-solving, innovation, and creating impactful solutions in the tech industry.</p>
-      <div class="cta">
-        <a href="#projects" class="button">See My Work</a>
-        <a href="https://github.com/davinfalahtama" target="_blank" class="button">GitHub</a>
+      <p class="lead">Machine Learning & AI Enthusiast | Problem Solver</p>
+      <div class="social-links">
+        <a href="https://github.com/davinfalahtama" target="_blank" class="btn btn-outline-light btn-lg"><i class="fab fa-github"></i> GitHub</a>
+        <a href="https://www.linkedin.com/in/firmansyahdavin/" target="_blank" class="btn btn-outline-light btn-lg"><i class="fab fa-linkedin"></i> LinkedIn</a>
       </div>
     </div>
   </section>
 
-  <section id="about" class="section">
-    <div class="container">
+  <!-- About Section -->
+  <section id="about" class="py-5">
+    <div class="container text-center">
       <h2>About Me</h2>
-      <p>I am a recent graduate from Institut Teknologi Perusahaan Listrik Negara (ITPLN) with a strong foundation in Machine Learning and Artificial Intelligence. I completed the Bangkit Academy’s Machine Learning path in 2023 and am experienced in Python, TensorFlow, and data-driven projects.</p>
+      <div class="row mt-4">
+        <div class="col-md-4">
+          <img src="\images\profile.jpeg" class="img-fluid rounded-circle" alt="Profile Picture">
+        </div>
+        <div class="col-md-8">
+          <p>I am a recent graduate from ITPLN with expertise in Machine Learning and Artificial Intelligence. Passionate about problem-solving and innovation, I have worked on projects that leverage AI to deliver impactful solutions.</p>
+          <p>With a background in data science, I aim to apply my knowledge to real-world challenges, continuously growing and learning in the tech field.</p>
+        </div>
+      </div>
     </div>
   </section>
 
-  <section id="experience" class="section">
-    <div class="container">
+  <!-- Skills Section -->
+  <section id="skills" class="bg-light py-5">
+    <div class="container text-center">
+      <h2>Skills</h2>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <h4>Machine Learning</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 90%;">90%</div>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <h4>Python</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 85%;">85%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <h4>Data Analysis</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 80%;">80%</div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4">
+          <h4>TensorFlow</h4>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" style="width: 75%;">75%</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="py-5">
+    <div class="container text-center">
       <h2>Experience</h2>
-      <div class="experience-item">
-        <h3>Data Analytics Intern at PLN Icon Plus</h3>
-        <p>Analyzed customer data and segmented users using Python and machine learning models.</p>
-      </div>
-      <div class="experience-item">
-        <h3>AI Engineer at Sekretariat Direktorat Jenderal Pendidikan Tinggi</h3>
-        <p>Developed the Borobudur AI Chatbot using large language models to improve user interactions.</p>
+      <div class="row mt-4">
+        <div class="col-md-6">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Data Analytics Intern</h5>
+              <p class="card-text">PLN Icon Plus - Oct 2023 to Jan 2024</p>
+              <p>Performed customer segmentation and data profiling using Python and clustering techniques to uncover insights about customer behavior.</p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-6 mt-4 mt-md-0">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">AI Engineer</h5>
+              <p class="card-text">Sekretariat Direktorat Jenderal Pendidikan Tinggi - Feb 2024 to Jun 2024</p>
+              <p>Developed an AI chatbot using advanced Large Language Models (LLMs), improving student interactions with personalized, accurate responses.</p>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
   </section>
 
-  <section id="projects" class="section">
-    <div class="container">
+<!-- Projects Section -->
+<section id="projects" class="bg-light py-5">
+    <div class="container text-center">
       <h2>Projects</h2>
-      <div class="projects-grid">
-        <div class="project-card">
-          <a href="https://github.com/gizi-wise" target="_blank">
-            <div class="project-image">
-              <img src="images/project1.jpg" alt="GiziWise Project">
+      <div class="row mt-4">
+        
+        <!-- LLM Chatbot Project (Added) -->
+        <div class="col-md-4">
+          <div class="card">
+            <img src="images/chatbot.jpg" class="card-img-top" alt="LLM Chatbot Project">
+            <div class="card-body">
+              <h5 class="card-title">LLM Chatbot for ITPLN PMB</h5>
+              <p class="card-text">Developed a Large Language Model-based chatbot to assist with new student admissions at ITPLN, utilizing techniques like Retrieval-Augmented Generation (RAG) and Google Gemini for real-time information delivery.</p>
+              <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank" class="btn btn-dark">View on GitHub</a>
             </div>
-            <div class="project-info">
-              <h3>GiziWise</h3>
-              <p>AI-powered application to analyze the composition and nutritional content of food.</p>
-            </div>
-          </a>
+          </div>
         </div>
-        <div class="project-card">
-          <a href="https://github.com/davinfalahtama/gizi-wise-ML" target="_blank">
-            <div class="project-image">
-              <img src="images/project3.png" alt="TensorFlow Object Detection">
+  
+        <!-- GiziWise Project -->
+        <div class="col-md-4 mt-4 mt-md-0">
+          <div class="card">
+            <img src="images/project1.jpg" class="card-img-top" alt="GiziWise Project">
+            <div class="card-body">
+              <h5 class="card-title">GiziWise</h5>
+              <p class="card-text">An AI-powered application that helps users discover food composition through image recognition.</p>
+              <a href="https://github.com/gizi-wise" target="_blank" class="btn btn-dark">View on GitHub</a>
             </div>
-            <div class="project-info">
-              <h3>TensorFlow Object Detection</h3>
-              <p>Indonesian food object detection using a CNN with 91.5% accuracy.</p>
-            </div>
-          </a>
+          </div>
         </div>
-        <div class="project-card">
-          <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">
-            <div class="project-image">
-              <img src="images/project2.jpg" alt="ITPLN PMB Chatbot">
+  
+        <!-- TensorFlow Object Detection -->
+        <div class="col-md-4 mt-4 mt-md-0">
+          <div class="card">
+            <img src="images/project2.jpg" class="card-img-top" alt="TensorFlow Object Detection">
+            <div class="card-body">
+              <h5 class="card-title">TensorFlow Object Detection</h5>
+              <p class="card-text">Machine learning project for food object detection with a custom dataset, achieving 91.5% accuracy.</p>
+              <a href="https://github.com/davinfalahtama/gizi-wise-ML" target="_blank" class="btn btn-dark">View on GitHub</a>
             </div>
-            <div class="project-info">
-              <h3>ITPLN PMB Chatbot</h3>
-              <p>An AI chatbot for new student admissions using LLMs and RAG method.</p>
-            </div>
-          </a>
+          </div>
         </div>
+        
       </div>
     </div>
   </section>
+  
 
-  <section id="contact" class="section">
-    <div class="container">
-      <h2>Contact</h2>
-      <p>If you would like to get in touch, feel free to reach out via the contact form below:</p>
-      <form action="mailto:firmansyah2031211@itpln.ac.id" method="post" enctype="text/plain">
-        <input type="text" name="name" placeholder="Your Name" required>
-        <input type="email" name="email" placeholder="Your Email" required>
-        <textarea name="message" placeholder="Your Message" required></textarea>
-        <button type="submit" class="button">Send Message</button>
+  <!-- Contact Section -->
+  <section id="contact" class="py-5">
+    <div class="container text-center">
+      <h2>Contact Me</h2>
+      <p>If you'd like to collaborate or get in touch, feel free to send me a message!</p>
+      <form action="mailto:firmansyah2031211@itpln.ac.id" method="post" enctype="text/plain" class="mt-4">
+        <div class="form-row">
+          <div class="col-md-6 mb-3">
+            <input type="text" class="form-control" name="name" placeholder="Your Name" required>
+          </div>
+          <div class="col-md-6 mb-3">
+            <input type="email" class="form-control" name="email" placeholder="Your Email" required>
+          </div>
+        </div>
+        <div class="form-group">
+          <textarea class="form-control" name="message" rows="4" placeholder="Your Message" required></textarea>
+        </div>
+        <button type="submit" class="btn btn-dark">Send Message</button>
       </form>
     </div>
   </section>
 
-  <footer>
-    <div class="container">
-      <p>&copy; 2024 Firmansyah Davin Falahtama</p>
-    </div>
+  <!-- Footer -->
+  <footer class="bg-dark text-white text-center py-3">
+    <p>&copy; 2024 Firmansyah Davin Falahtama | All Rights Reserved</p>
   </footer>
 
-  <script>
-    // Smooth scrolling for navigation links
-    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
-      anchor.addEventListener('click', function(e) {
-        e.preventDefault();
-        document.querySelector(this.getAttribute('href')).scrollIntoView({
-          behavior: 'smooth'
-        });
-      });
-    });
-  </script>
-
+  <!-- Bootstrap & JS -->
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.2/dist/umd/popper.min.js"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script src="js/scripts.js"></script>
 </body>
 </html>
