@@ -11,11 +11,15 @@ body {
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    background-color: #333;
-    color: white;
+    background-color: transparent;
     position: fixed;
     width: 100%;
-    top: 0;
+    z-index: 10;
+    transition: background-color 0.3s ease;
+}
+
+.navbar.sticky {
+    background-color: #fff;
 }
 
 .navbar ul {
@@ -30,23 +34,37 @@ body {
 }
 
 .navbar ul li a {
-    color: white;
+    color: #333;
     text-decoration: none;
+    font-weight: 600;
 }
 
-.hero-content {
+#hero {
+    height: 100vh;
+    background-image: url('your-hero-image.jpg');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     text-align: center;
-    padding: 100px 20px;
-    background: linear-gradient(to right, #667eea, #764ba2);
     color: white;
+}
+
+.hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 20px;
 }
 
 .cta-button {
+    padding: 12px 30px;
     background-color: #fff;
     color: #333;
-    padding: 10px 20px;
-    text-decoration: none;
+    border: none;
     border-radius: 5px;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-weight: bold;
     transition: background-color 0.3s ease;
 }
 
@@ -57,25 +75,27 @@ body {
 
 .section {
     padding: 80px 20px;
+    max-width: 1200px;
+    margin: 0 auto;
     text-align: center;
 }
 
 .projects-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
     gap: 20px;
 }
 
 .project-card {
     background-color: #fff;
     padding: 20px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
+    transition: transform 0.3s ease;
 }
 
-.project-link {
-    color: #667eea;
-    text-decoration: none;
+.project-card:hover {
+    transform: translateY(-10px);
 }
 
 footer {
@@ -83,4 +103,16 @@ footer {
     color: white;
     padding: 20px;
     text-align: center;
+}
+
+/* Animations */
+.section {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 0.8s ease, transform 0.8s ease;
+}
+
+.section.active {
+    opacity: 1;
+    transform: translateY(0);
 }
