@@ -1,88 +1,130 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Firmansyah Davin Falahtama Portfolio">
-    <title>Firmansyah Davin Falahtama</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Portfolio of Firmansyah Davin Falahtama, Machine Learning and AI Engineer.">
+  <title>Firmansyah Davin Falahtama | Portfolio</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <div class="container">
-            <a class="logo" href="#">Firmansyah Davin Falahtama</a>
-            <div class="nav-links">
-                <a href="#about">About</a>
-                <a href="#work">Work</a>
-                <a href="#contact">Contact</a>
+  <header>
+    <div class="container">
+      <nav>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <section id="home">
+    <div class="intro">
+      <h1>Firmansyah Davin Falahtama</h1>
+      <p>Machine Learning & AI Engineer passionate about problem-solving, innovation, and creating impactful solutions in the tech industry.</p>
+      <div class="cta">
+        <a href="#projects" class="button">See My Work</a>
+        <a href="https://github.com/davinfalahtama" target="_blank" class="button">GitHub</a>
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About Me</h2>
+      <p>I am a recent graduate from Institut Teknologi Perusahaan Listrik Negara (ITPLN) with a strong foundation in Machine Learning and Artificial Intelligence. I completed the Bangkit Academy’s Machine Learning path in 2023 and am experienced in Python, TensorFlow, and data-driven projects.</p>
+    </div>
+  </section>
+
+  <section id="experience" class="section">
+    <div class="container">
+      <h2>Experience</h2>
+      <div class="experience-item">
+        <h3>Data Analytics Intern at PLN Icon Plus</h3>
+        <p>Analyzed customer data and segmented users using Python and machine learning models.</p>
+      </div>
+      <div class="experience-item">
+        <h3>AI Engineer at Sekretariat Direktorat Jenderal Pendidikan Tinggi</h3>
+        <p>Developed the Borobudur AI Chatbot using large language models to improve user interactions.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects" class="section">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <a href="https://github.com/gizi-wise" target="_blank">
+            <div class="project-image">
+              <img src="images/project1.jpg" alt="GiziWise Project">
             </div>
-        </div>
-    </nav>
-
-    <!-- Hero Section -->
-    <section id="hero">
-        <div class="container text-center">
-            <h1>Firmansyah Davin Falahtama</h1>
-            <p>AI Enthusiast | Data Scientist | Software Developer</p>
-        </div>
-    </section>
-
-    <!-- About Section -->
-    <section id="about">
-        <div class="container">
-            <h2>About Me</h2>
-            <p>
-                I am an AI and Machine Learning enthusiast with a passion for creating innovative solutions. I have worked on multiple projects, from chatbots to data analysis, and I strive to make a positive impact through technology.
-            </p>
-        </div>
-    </section>
-
-    <!-- Work Section -->
-    <section id="work">
-        <div class="container">
-            <h2>Selected Work</h2>
-            <div class="work-grid">
-                <div class="work-item">
-                    <h3>GiziWise - Nutrition Detection App</h3>
-                    <p>Analyzing food images to provide nutritional insights.</p>
-                    <a href="https://github.com/gizi-wise" target="_blank">View Project</a>
-                </div>
-                <div class="work-item">
-                    <h3>PMB Chatbot - ITPLN</h3>
-                    <p>AI-based chatbot for assisting ITPLN’s new student admissions process.</p>
-                    <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">View Project</a>
-                </div>
+            <div class="project-info">
+              <h3>GiziWise</h3>
+              <p>AI-powered application to analyze the composition and nutritional content of food.</p>
             </div>
+          </a>
         </div>
-    </section>
-
-    <!-- Contact Section -->
-    <section id="contact">
-        <div class="container text-center">
-            <h2>Contact Me</h2>
-            <p>If you’d like to collaborate, feel free to reach out!</p>
-            <a href="mailto:firmansyah2031211@itpln.ac.id" class="btn">Email Me</a>
-            <a href="https://www.linkedin.com/in/firmansyahdavin/" target="_blank" class="btn-outline">LinkedIn</a>
+        <div class="project-card">
+          <a href="https://github.com/davinfalahtama/gizi-wise-ML" target="_blank">
+            <div class="project-image">
+              <img src="images/project3.png" alt="TensorFlow Object Detection">
+            </div>
+            <div class="project-info">
+              <h3>TensorFlow Object Detection</h3>
+              <p>Indonesian food object detection using a CNN with 91.5% accuracy.</p>
+            </div>
+          </a>
         </div>
-    </section>
+        <div class="project-card">
+          <a href="https://github.com/davinfalahtama/1Skripsi" target="_blank">
+            <div class="project-image">
+              <img src="images/project2.jpg" alt="ITPLN PMB Chatbot">
+            </div>
+            <div class="project-info">
+              <h3>ITPLN PMB Chatbot</h3>
+              <p>An AI chatbot for new student admissions using LLMs and RAG method.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <!-- Footer -->
-    <footer class="text-center">
-        <p>&copy; 2024 Firmansyah Davin Falahtama</p>
-    </footer>
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>If you would like to get in touch, feel free to reach out via the contact form below:</p>
+      <form action="mailto:firmansyah2031211@itpln.ac.id" method="post" enctype="text/plain">
+        <input type="text" name="name" placeholder="Your Name" required>
+        <input type="email" name="email" placeholder="Your Email" required>
+        <textarea name="message" placeholder="Your Message" required></textarea>
+        <button type="submit" class="button">Send Message</button>
+      </form>
+    </div>
+  </section>
 
-    <!-- Smooth Scroll JS -->
-    <script>
-        document.querySelectorAll('.nav-links a').forEach(anchor => {
-            anchor.addEventListener('click', function(e) {
-                e.preventDefault();
-                document.querySelector(this.getAttribute('href')).scrollIntoView({
-                    behavior: 'smooth'
-                });
-            });
+  <footer>
+    <div class="container">
+      <p>&copy; 2024 Firmansyah Davin Falahtama</p>
+    </div>
+  </footer>
+
+  <script>
+    // Smooth scrolling for navigation links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+          behavior: 'smooth'
         });
-    </script>
+      });
+    });
+  </script>
+
 </body>
 </html>
